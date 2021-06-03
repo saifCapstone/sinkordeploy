@@ -1,17 +1,22 @@
 {
-  "name": "expressmongoserver",
+  "name": "sinkorswim2021",
   "version": "1.0.0",
   "description": "This directory contains two express servers: * AppServer.js - Combined Node/Express web server w/ Mongo Access * Server.js - Encapsulated Node/Express web server w/ Mongo Access",
   "main": "./AppServer.js",
   "dependencies": {
     "@types/morgan": "^1.9.2",
     "@types/node": "^9.6.61",
+    "SampleMocha": "file:mocha",
     "assert": "^1.5.0",
+    "async": "^2.6.1",
     "body-parser": "^1.19.0",
+    "chai": "^4.3.4",
+    "chai-http": "^4.0.0",
     "debug": "^2.6.9",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "faker": "^5.5.3",
+    "mocha": "^5.2.0",
     "mongo": "^0.1.0",
     "mongodb": "^2.2.36",
     "mongoose": "^5.10.19",
@@ -28,7 +33,7 @@
     "typescript": "^2.9.2"
   },
   "scripts": {
-    "test": "npm test",
+    "test": "mocha ./tests/*.js",
     "start": "node AppServer.js"
   },
   "noAnalyze": true,
